@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_Quaries.css" />
+    <title>Laxman's Portfolio</title>
+  </head>
+  <body>
+    <div class="staring">
+      <a href="#home"><i class="fa-solid fa-arrow-turn-up"></i></a>
+    </div>
+
+     <!-- ************************************************Navbar Section************************************************ -->
+
+    <nav id="nav">
+      <div class="logo">
+        <h1>Laxman</h1>
+      </div>
+      <div class="links" id="link">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#work_container">Project</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="button">
+        <button>Let's Talk</button>
+      </div>
+      <div class="menu" onclick="menuOpen()">
+        <i
+          class="fa-solid fa-bars"
+          onclick="changeIcon(this)"
+          style="color: black"
+        ></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
+    </nav>
+
+     <!-- ************************************************Hero Section************************************************ -->
+
+    <header id="home">
+      <div class="container">
+        <div class="content">
+          <div class="first_content">
+            <div class="header_logo">
+              <img src="Assets/asset 2 copy.png" alt="" />
+            </div>
+            <div class="header_content">
+              <h1>My name is <span class="laxman">Laxman.</span> <br /></h1>
+              <h1 data-text="WebDeveloper" class="animation">WebDeveloper</h1>
+              <!-- <h4>Head of design at Calvino</h4> -->
+            </div>
+          </div>
+          <div class="second_content">
+            <div class="design">
+              <h6 style="text-align: start">Design For</h6>
+              <h4>Web & Mobile</h4>
+            </div>
+            <div class="phone_no">
+              <h6>Phone</h6>
+              <h4>+91 8602789155</h4>
+            </div>
+            <div class="massage">
+              <div>
+                <h6>Drop your Message</h6>
+                <h4>Laxmankori369@gmail.com</h4>
+              </div>
+              <div class="gmail_icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ************************************************Project Section************************************************ -->
+    
+    <section class="experties" id="work_container">
+      <div class="section_container">
+        <div class="experties_heading">
+          <h3>My Projects</h3>
+        </div>
+
+        <div class="projects">
+          <a href="https://laxmankori.github.io/zomato_clone/" target="_blank">
+          <div class="project">
+            <img src="Assets/project1.png" alt="">
+          </div>
+        </a>
+        <a href="https://api-base-weather-app.netlify.app/" target="_blank">
+          <div class="project" id="project2">
+            <img src="Assets/project2.png" alt="">
+          </div>
+        </a>
+        <a href="https://oneclick-calculate-age.netlify.app/" target="_blank">
+          <div class="project" id="project2">
+            <img src="Assets/project3.png" alt="">
+          </div>
+        </a>
+        </div>
+<div class="work_button">
+  <button>More Work</button>
+</div>
+</div>
+</section>
+
+<!-- ************************************************Services Section************************************************ -->
+
+<section class="services" id="service">
+<div class="service_container">
+  <div class="experties_heading">
+    <h3>Services</h3>
+  </div>
+  <div class="experties_boxs">
+    <div class="experties_box" id="border-right">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h5>Web design</h5>
+      <p>
+        I Design Websites With Figma
+      </p>
+    </div>
+    <div class="experties_box">
+      <i class="fa-solid fa-code"></i>
+      <h5>Web developer</h5>
+      <p>
+       I Develope Websites with HTML, CSS and JavaScript.
+      </p>
+    </div>
+   
+  </div>
+</div>
+</section>
+    
+
+    <!-- ************************************************Contact Section************************************************ -->
+
+    <section class="contact experties" id="contact">
+      <div class="section_container">
+        <div class="experties_heading">
+          <h3>Contact</h3>
+        </div>
+        <div class="contact_boxs">
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h5>Address</h5>
+            <p style="color: black">Jabalpur (482002) Madhya Pradesh India</p>
+          </div>
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h5>Contact Number</h5>
+            <p>+91 8602789155</p>
+          </div>
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <h5>Email Address</h5>
+            <p>laxmankori369@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact_details">
+          <div class="contact_inputs">
+            <form action="">
+              <div class="n_inputs">
+                <input type="text" name="name" id="" placeholder="YOUR NAME" />
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="YOUR EMAIL"
+                />
+              </div>
+              <input
+                type="text"
+                name="text"
+                id=""
+                placeholder="YOUR SUBJECT"
+                class="sub"
+              />
+              <textarea
+                name="massage"
+                id=""
+                cols="10"
+                rows="5"
+                placeholder="YOUR MASSAGE"
+              ></textarea>
+              <div class="contact_button">
+                <button type="submit">Send Massage</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************************Contact Section************************************************ -->
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <h1>Laxman</h1>
+           <div class="socialmedia_icons">
+      <div class="sm_icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+      <div class="sm_icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+      <div class="sm_icon"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+     </div>
+     <p id="copyR">©2024 All rights reserved | This website is made by Laxman Kori</p>
+        
+        </div>
+        <div class="footer_right">
+        <div class="footer_buttons">
+<button id="cv"><a href="#">Download CV</a></button>
+<button><a href="#">Let's talk</a></button>
+</div>
+<div class="footer_link">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ed0adca9b4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
